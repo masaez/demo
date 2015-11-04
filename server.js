@@ -1,6 +1,6 @@
 var http = require('http');
 http.createServer(function (req, res) {
-    console.log('Got request for ' + req.url);
+    console.log('Llego request de ' + req.url);
     res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end('<h1>Hola Code and Azure Web Apps!</h1>');
+    res.end('<h1>Hola Code y Azure Web Apps!</h1>');
 }).listen(process.env.PORT);
